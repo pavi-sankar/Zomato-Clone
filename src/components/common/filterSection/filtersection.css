@@ -1,0 +1,31 @@
+.filter-container {
+    width: 100%;
+    background-color: var(--primary-bg);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.filters {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    list-style: none;
+   
+}
+
+.filter-list {
+    cursor: pointer;
+    margin-right: 14px;
+    display: flex;
+    border: 1px solid var(--filter-text);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--filter-text);
+}
+
+.filter-title {
+    margin-left: 3px;
+    font-size: 16px;
+}

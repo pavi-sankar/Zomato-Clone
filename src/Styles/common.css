@@ -1,0 +1,16 @@
+.max-width {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.abs-center {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.slick-next:before,
+.slick-prev:before{
+    color: var(--zomato-gray);
+    font-size: 30px;
+}

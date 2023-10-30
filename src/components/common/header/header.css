@@ -1,0 +1,96 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .header-logo {
+    height: 27px;
+    max-width: 140px;
+    margin-right: 24px;
+    cursor: pointer;
+  }
+  
+  .header-right {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+  }
+  
+  .header-container {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: var(--primary-box-shadow);
+    border: 1px solid var(--border-white);
+    width: 75%;
+    background-color: var(--primary-bg);
+  }
+  
+  .location-search {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  
+  .location-icon-container {
+    display: flex;
+    color: var(--zomato-gray);
+  }
+  
+  .location-icon {
+    color: var(--zomato-red);
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .separator {
+    height: 20px;
+    border: 0.5px solid var(--gray);
+  }
+  
+  .header-searchBar {
+    display: flex;
+    flex: 2;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: var(--zomato-gray);
+    margin: 0px 12px;
+    cursor: pointer;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    width: 60%;
+    font-size: 14px;
+  }
+  
+  .account-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem;
+  }
+
+  button {
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    font-weight: 300px;
+    color: var(--zomato-gray);
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: var(--subtitle-text);
+  }
+
