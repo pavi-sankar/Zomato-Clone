@@ -8,7 +8,7 @@ function Delivery() {
   const filterItems = [
     {
       id: 1,
-      icon: <i class="fi fi-rr-settings-sliders absolute-center"></i>,
+      icon: <i class="fi fi-rr-settings-sliders"></i>,
       title: "Filters",
     },
     { id: 2, title: "4.0+" },

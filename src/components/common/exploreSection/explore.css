@@ -1,25 +1,63 @@
-.explore-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .card {
-    width: calc(33.33% - 40px); /* Adjust as needed to provide spacing between cards */
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 10px;
-  }
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* To evenly space the cards */
+}
 
-  .card p {
-    max-width: 150px; /* Adjust to your desired fixed width */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .card img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
+.explore-card-section {
+  width: calc(33.33% - 10px); /* Adjust the width for 3 cards in a row with some spacing */
+  margin-bottom: 20px; /* Add some vertical spacing between cards */
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Add a border to each card for separation */
+  border-radius: 5px;
+  overflow: hidden; /* Hide content that overflows the card */
+  transition: transform 0.3s; /* Add a hover effect */
+}
+
+.explore-card-section:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.explore-card-cover img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-footer-section {
+  padding: 10px;
+}
+
+.restaurant-title-rating, .category-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-title {
+  width: 70%; /* Adjust as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-rating {
+  width: 10%;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #4CAF50; /* Your desired green color */
+  color: #fff; /* White text color */
+  padding: 3px 5px; /* Add padding to make it visually appealing */
+}
+
+.exlpore-card-category {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.explore-card-time {
+  width: 30%;
+  text-align: right;
+}

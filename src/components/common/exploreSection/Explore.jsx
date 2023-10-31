@@ -6,14 +6,23 @@ function Explore() {
 
   return (
     <div>
-      <div className="max-width">
-      <h1>Delivery restaurants Near Banglore</h1>
-        <div className='explore-section'>
+      <div className="max-width explore-section">
+      <h1 className='explore-title'>Delivery restaurants Near Banglore</h1>
+        <div className='cards-grid'>
         {ExploreData.map((item, index) => (
-          <div className="card" key={index}>
-            <img src={item.cover} alt={item.title} />
-            <h4>{item.title}</h4>
-            <p>{item.category}</p>
+          <div className="explore-card-section" key={index}>
+            <div className='explore-card-cover'>
+              <img src={item.cover} alt={item.title} className='card-img'/></div>
+            <div className='card-footer-section'>
+              <div className='restaurant-title-rating'>
+                <div className='restaurant-title'>{item.title}</div>
+                <div className='restaurant-rating abs-center'>{item.rating} <i className="fi fi-rr-star"></i></div>
+              </div>
+              <div className='category-time'>
+                <p className='exlpore-card-category'>{item.category}</p>
+                <div className='explore-card-time'>{item.time}</div>
+              </div>  
+            </div>   
           </div>
         ))}
         </div>
