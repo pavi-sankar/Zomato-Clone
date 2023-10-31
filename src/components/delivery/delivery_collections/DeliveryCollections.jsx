@@ -6,7 +6,7 @@ import PrevArrow from "../../common/carousalArrows/PrevArrow";
 
 function DeliveryCollections({carousal}) {
 
-  const CollectionList = [
+  const FoodList = [
     {
       id: 1,
       title: "Dosa",
@@ -79,7 +79,71 @@ function DeliveryCollections({carousal}) {
       cover:
         "https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png",
     }
-  ]; 
+  ];
+  
+  const brands = [
+    {
+    id: 1,
+    title: "McDonalds",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/775f928725d1a9dd80422632de22c224_1611377090.png?output-format=webp",
+  },
+  {
+    id: 2,
+    title: "Dominos",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252811.png?output-format=webp",
+  },
+  {
+    id: 3,
+    title: "Pizza Hut",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/c38f7540bcc5a38e918856ac06409056_1504531339.png?output-format=webp",
+  },
+  {
+    id: 4,
+    title: "Burger King",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188299.png?output-format=webp",
+  },
+  {
+    id: 5,
+    title: "KFC",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/9da52e2b69f19bb603227a750e788d33_1613215152.png?output-format=webp",
+  },
+  {
+    id: 6,
+    title: "A2B",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/5ef673b417cd25b5a04176ce341d425a_1630505652.png?output-format=webp",
+  },
+  {
+    id: 7,
+    title: "Fresh Menu",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/dc49d77dce0ee7fc8e495fa35be0e747_1648715086.png",
+  },
+  {
+    id: 8,
+    title: "Starbucks Coffee",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/b61270c5ac3356384460b1c2a1a35071_1633121736.png?output-format=webp",
+  },
+  {
+    id: 9,
+    title: "Subway",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/9302c59eca94abbee01aec9acf9305f6_1676471832.png?output-format=webp",
+  },
+  {
+    id: 10,
+    title: "Haldiram's",
+    cover:
+      "https://b.zmtcdn.com/data/brand_creatives/logos/22529ff52d41a4aa3b36ac1e7e0c0db3_1605099406.png",
+  }
+];
+
 
   const settings = {
     infinite: false,
@@ -90,12 +154,12 @@ function DeliveryCollections({carousal}) {
   };
 
   return (
-    <div className="delivery-collection-container">
+    <div className={carousal ? "delivery-collection-container" : "brands-collection-container"}>
       <div className="max-width">
-        <h1 className="collection-title">{carousal=='collection' ? "Inspiration for your first order" : "Top brands for you"}</h1>
+        <h1 className="collection-title">{carousal ? "Inspiration for your first order" : "Top brands for you"}</h1>
         <Slider {...settings}>
-          {CollectionList.map((item, index) => (
-            <div key={index}>
+          {carousal ? FoodList.map((item) => (
+            <div key={item.id}>
               <div className="delivery-item-cover">
                 <img src={item.cover} className="delivery-item-image"alt={item.title}/>
               </div>
@@ -103,7 +167,16 @@ function DeliveryCollections({carousal}) {
                 {item.title}
               </div>
             </div>
-          ))}
+          )) : brands.map((item) => (
+            <div key={item.id}>
+              <div className="delivery-item-cover">
+                <img src={item.cover} className="delivery-item-image"alt={item.title}/>
+              </div>
+              <div className="brand-item-title">
+                {item.title}
+              </div>
+            </div>
+          )) }
         </Slider>
       </div>
     </div>

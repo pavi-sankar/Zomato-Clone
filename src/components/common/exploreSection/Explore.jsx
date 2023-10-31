@@ -1,22 +1,25 @@
-/* import React from 'react'
+import React from 'react'
 import "./explore.css"
+import { ExploreData } from '../../../../data/ExploreData'
 
-function Explore({restaurants}) {
+function Explore() {
 
   return (
     <div>
-      <div className="max-width explore-section">
-        <div className="collection-title">
-          Reastaurants In Bengluru
+      <div className="max-width">
+      <h1>Delivery restaurants Near Banglore</h1>
+        <div className='explore-section'>
+        {ExploreData.map((item, index) => (
+          <div className="card" key={index}>
+            <img src={item.cover} alt={item.title} />
+            <h4>{item.title}</h4>
+            <p>{item.category}</p>
+          </div>
+        ))}
         </div>
-        <div className="explore-grid">
-           {list.map((restaurant) => {
-            return <ExploreCard restaurant={restaurant} />;
-           })}
-       </div>
       </div>
-    </div>
+    </div>  
   )
 }
 
-export default Explore */
+export default Explore 

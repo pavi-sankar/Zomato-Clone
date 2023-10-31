@@ -1,0 +1,25 @@
+.explore-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33.33% - 40px); /* Adjust as needed to provide spacing between cards */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .card p {
+    max-width: 150px; /* Adjust to your desired fixed width */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
