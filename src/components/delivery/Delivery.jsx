@@ -3,12 +3,12 @@ import FilterSection from '../common/filterSection/FilterSection'
 import DeliveryCollections from './delivery_collections/DeliveryCollections'
 import Explore from '../common/exploreSection/Explore';
 
-function Delivery() {
+function Delivery({searchQuery}) {
 
   const filterItems = [
     {
       id: 1,
-      icon: <i class="fi fi-rr-settings-sliders"></i>,
+      icon: <i className="fi fi-rr-settings-sliders"></i>,
       title: "Filters",
     },
     { id: 2, title: "4.0+" },
@@ -21,7 +21,7 @@ function Delivery() {
         <FilterSection filterlist={filterItems} />
         <DeliveryCollections carousal={true} />
         <DeliveryCollections carousal={false} />
-        <Explore />
+        <Explore searchQuery={searchQuery} />
     </div>
   )
 }

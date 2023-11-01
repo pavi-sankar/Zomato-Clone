@@ -12,6 +12,8 @@ function Home() {
 
   const [portalPage,setPortalPage] = useState(false);
 
+  const [searchQuery,setSearchQuery] = useState('');
+
   const generatePortal = ()=> {
     setPortalPage(true)
   } 
@@ -25,7 +27,7 @@ function Home() {
     function getSection (tab){
         switch(tab){
             case "Delivery":
-            return <Delivery />
+            return <Delivery searchQuery={searchQuery} />
 
             case "Dining Out":
             return <DiningOut />
@@ -34,20 +36,19 @@ function Home() {
             return <NightLife />
 
             default :
-            return <Delivery />
+            return <Delivery searchQuery={searchQuery} />
         }
     }
 
   return (
     <div>
-        <Header generatePortal={generatePortal} />
+        {
+          portalPage &&  (<AuthPortal close={closePortal} />)
+        }
+        <Header generatePortal={generatePortal} setSearchQuery={setSearchQuery}  />
         <TabSection sectionTab={sectionTab} setSectionTab={setSectionTab} />
         {getSection(sectionTab)}
         <Footer />
-
-        {
-          portalPage && (<AuthPortal close={closePortal} />)
-        }
     </div>
   )
 }

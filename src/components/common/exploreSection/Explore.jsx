@@ -2,14 +2,20 @@ import React from 'react'
 import "./explore.css"
 import { ExploreData } from '../../../../data/ExploreData'
 
-function Explore() {
+function Explore({searchQuery}) {
+
+  const filtered = ExploreData.filter(item => {
+    const titleMatch = item.title.toLowerCase().includes(searchQuery.toLowerCase());
+    const categoryMatch = item.category.toLowerCase().includes(searchQuery.toLowerCase());
+    return titleMatch || categoryMatch;
+  });
 
   return (
     <div>
       <div className="max-width explore-section">
       <h1 className='explore-title'>Delivery restaurants Near Banglore</h1>
         <div className='cards-grid'>
-        {ExploreData.map((item, index) => (
+        {filtered.map((item, index) => (
           <div className="explore-card-section" key={index}>
             <div className='explore-card-cover'>
               <img src={item.cover} alt={item.title} className='card-img'/></div>

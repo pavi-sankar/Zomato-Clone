@@ -1,13 +1,16 @@
 import React from 'react'
 import "./authportal.css"
-import { ReactDOM } from 'react-dom'
 
 const AuthPortal = ({close})=> {
-  return ReactDOM.createPortal(
+  return (
     <div className='portal'>
-        <h1 style={{color:"red"}}>Authentication</h1>
-        <button onClick={close}>close</button>
-    </div>, document.getElementById("portal")
+      <form className='form'>
+        <h1 style={{color:"red"}}>login</h1>
+        <input type='email' placeholder='Enter Email'></input>
+        <input type='password' placeholder='password'></input>
+        <button className='login-submit' onClick={close}>Login</button>
+      </form>
+    </div>
   )
 }
 

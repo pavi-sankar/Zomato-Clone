@@ -1,7 +1,12 @@
 import "./header.css"
 
-function Header({generatePortal}) {
+function Header({generatePortal,setSearchQuery}) {
 
+  function search(e) {
+    const searchQuery = e.target.value;
+    setSearchQuery(searchQuery); 
+  }
+  
   return (
     <div className='max-width header'>
       <div className='header-left'>
@@ -24,6 +29,7 @@ function Header({generatePortal}) {
             <input
               placeholder="Search for restaurant, cuisine or a dish"
               className="search-input"
+              onChange={search}
             />
           </div>
         </div>
