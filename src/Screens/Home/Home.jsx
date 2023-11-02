@@ -30,10 +30,10 @@ function Home() {
             return <Delivery searchQuery={searchQuery} />
 
             case "Dining Out":
-            return <DiningOut />
+            return <DiningOut searchQuery={searchQuery} />
 
             case "Night Life":
-            return <NightLife />
+            return <NightLife searchQuery={searchQuery} />
 
             default :
             return <Delivery searchQuery={searchQuery} />

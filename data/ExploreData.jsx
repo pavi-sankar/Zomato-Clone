@@ -7,4 +7,12 @@ export const ExploreData = [
     {id:6, cover:"https://b.zmtcdn.com/data/pictures/chains/0/65540/f31733dfcef4c1edb388b77619e07a59_o2_featured_v2.jpg", title:"Subway", category:"sandwich, fast food, american", rating:"4.1" ,time:"28 mins"},
     {id:7, cover:"https://b.zmtcdn.com/data/pictures/chains/6/65456/4b16336b06df38a18362be00bf81d2e5_o2_featured_v2.jpg", title:"Pizza Hut", category:"pizza ,fast food,american", rating:"4.0" ,time:"23 mins"},
     {id:8, cover:"https://b.zmtcdn.com/data/pictures/chains/5/66555/995145af92d5d5004cc7e180d4d104c1_o2_featured_v2.jpg", title:"Cafe Agape", category:"coffee ,Cake ,deserts", rating:"4.2" ,time:"17 mins"},
+    {id:9, cover:"https://b.zmtcdn.com/data/pictures/chains/2/50112/c4aca0118053549e762faa92c378e36e_o2_featured_v2.jpg", title:"Beijing Bites", category:"Chinese seafood eastern", rating:"4.4", time:"32 mins" },
+    {id:10, cover:"https://b.zmtcdn.com/data/pictures/chains/7/54787/629cf28c818d7208fa22c7e9bfbe0e60_o2_featured_v2.jpg", title:"Rolls On Wheels", category:"Rolls Western Fast food", rating:"3.6", time:"25 mins" },
+    {id:11, cover:"https://b.zmtcdn.com/data/pictures/chains/4/54644/e4784979724f91b2ec41fee0c9425942_o2_featured_v2.jpg", title:"Wow Momo", category:"Momos Tibetan Eastern", rating:"3.9", time:"14 mins" },
+    {id:12, cover:"https://b.zmtcdn.com/data/pictures/chains/9/60069/b5715d104a2580bb908f126b8dee7028_o2_featured_v2.jpeg", title:"Laasi Shop", category:"Beverages jucies Drinks", rating:"3.8", time:"10 mins" },
+    {id:13, cover:"https://b.zmtcdn.com/data/pictures/chains/8/50708/486d8f30ecda00b9ce9de7dc14c6fe0b_o2_featured_v2.jpg", title:"Ashok Bhavan", category:"Meals South-indian Vegeterian", rating:"3.9", time:"15 mins" },
+    {id:14, cover:"https://b.zmtcdn.com/data/pictures/chains/0/19316300/3a39ab50914d3b68b19319919a55cfc7_o2_featured_v2.jpg", title:"NIC ice creams", category:"Ice-cream desert cakes", rating:"4.0", time:"10 mins" },
+    {id:15, cover:"https://b.zmtcdn.com/data/pictures/chains/8/18556248/1450cacf9600dacf30819c50d784ddb8_o2_featured_v2.jpg", title:"Rotti Wala", category:"North-indian Rotti chapathi", rating:"4.1", time:"16 mins" },
+    {id:16, cover:"https://b.zmtcdn.com/data/pictures/chains/2/53922/2cc325e095dfa78bf99324794c0739fa_o2_featured_v2.jpg", title:"California Burrito", category:"Mexican American Healthy Salad", rating:"4.2", time:"18 mins" },
 ];

@@ -1,8 +1,10 @@
 import React from 'react'
 import "./dining.css"
 import Collections from '../common/Collections/Collections';
+import FilterSection from '../common/filterSection/FilterSection'
+import Explore from '../common/exploreSection/Explore';
 
-function DiningOut() {
+function DiningOut({searchQuery}) {
 
   const collectionList = [
     {
@@ -31,9 +33,26 @@ function DiningOut() {
     },
   ];
 
+  const filterItems = [
+    {
+      id: 1,
+      icon: <i className="fi fi-rr-settings-sliders"></i>,
+      title: "Filters",
+    },
+    { id: 2, title: "4.0+" },
+    { id: 3, title: "Continental" },
+    { id: 4, title: "Outdoor" },
+    { id: 5, title: "Open now"}
+  ];
+
   return (
     <div className='diningout-container'>
       <Collections collectionList={collectionList} />
+      <FilterSection filterlist={filterItems} />
+      <div className='max-width add'>
+        <img src='https://b.zmtcdn.com/data/o2_assets/da94405b04f6ae6bf64a4e2a01b1b5c11686563732.png' alt='add' className='add-img' />
+      </div>
+      <Explore searchQuery={searchQuery} />
     </div>
   )
 }

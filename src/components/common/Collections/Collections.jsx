@@ -14,9 +14,9 @@ const settings = {
 
 function Collections({collectionList}) {
   return (
-    <div>
+    <div className='common-collection-container'>
         <div className='max-width'>
-        <h1>Collections</h1>
+        <h1 className='collection-title'>Collections</h1>
         <div className="collection-subtitle-row">
           <div className="collection-subtitle-text">
             Explore curated lists of top restaurants, cafes, pubs, and bars in
@@ -24,7 +24,7 @@ function Collections({collectionList}) {
           </div>
           <div className="collection-location">
             <div>All collections in Banglore</div>
-            <i className="fi fi-rr-caret-right absolute-center"></i>
+            <i className="fi fi-rr-caret-right abs-center"></i>
           </div>
         </div>
         <Slider {...settings}>
@@ -32,11 +32,7 @@ function Collections({collectionList}) {
             return (
               <div key={item.id}>
                 <div className="collection-cover">
-                  <img
-                    src={item.cover}
-                    className="collection-image"
-                    alt={item.title}
-                  />
+                  <img src={item.cover} className="collection-image" alt={item.title} />
                   <div className="gradient-bg"></div>
                   <div className="collection-card-title">{item.title}</div>
                   <div className="collection-card-subtitle">
