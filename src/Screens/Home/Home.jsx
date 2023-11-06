@@ -14,8 +14,17 @@ function Home() {
 
   const [searchQuery,setSearchQuery] = useState('');
 
-  const generatePortal = ()=> {
+  const [btntitle,setBtntitle] = useState('')
+
+  const generatePortal = (buttonClicked) => {
     setPortalPage(true)
+    if(buttonClicked==='sign up')
+    {
+      setBtntitle(buttonClicked)
+    }
+    else{
+      setBtntitle(buttonClicked)
+    }
   } 
 
   const closePortal = ()=> {
@@ -43,7 +52,7 @@ function Home() {
   return (
     <div>
         {
-          portalPage &&  (<AuthPortal close={closePortal} />)
+          portalPage &&  (<AuthPortal close={closePortal} formTitle={btntitle} />)
         }
         <Header generatePortal={generatePortal} setSearchQuery={setSearchQuery}  />
         <TabSection sectionTab={sectionTab} setSectionTab={setSectionTab} />

@@ -27,10 +27,10 @@ function Footer() {
                 </div>
                 <div className="footer-box">
                     <div className="boxTtl">ZOMAVERSE</div>
-                    <p className="footer-boxOpt">Tomato</p>
+                    <p className="footer-boxOpt">Zomato</p>
                     <p className="footer-boxOpt">Feeding India</p>
                     <p className="footer-boxOpt">Hyperpure</p>
-                    <p className="footer-boxOpt">Tomaland</p>
+                    <p className="footer-boxOpt">Zomaland</p>
                 </div>
                 <div className="footer-box">
                     <div className="boxTtl">FOR RESTAURANTS</div>
@@ -38,7 +38,7 @@ function Footer() {
                     <p className="footer-boxOpt">Apps For You</p>
 
                     <div className="boxTtl">FOR ENTERPRISES</div>
-                    <p className="footer-boxOpt">Tomato For Work</p>
+                    <p className="footer-boxOpt">Zomato For Work</p>
                 </div>
                 <div className="footer-box">
                     <div className="footer-boxTtl">LEARN MORE</div>
@@ -71,9 +71,6 @@ function Footer() {
                 </div>
             </div>
             <hr className="footer-breakLine" />
-            <div className="footer-sec3">
-                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Tomato™ Ltd. All rights reserved.
-            </div>
         </div>
       </div>
   )

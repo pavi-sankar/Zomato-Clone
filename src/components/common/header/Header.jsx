@@ -34,11 +34,11 @@ function Header({generatePortal,setSearchQuery}) {
           </div>
         </div>
         <div className="account-container">
-          <button onClick={generatePortal} className="Login">
+          <button onClick={()=>generatePortal("login")}  className="Login">
             Log In
           </button>
              
-          <button onClick={generatePortal} className="Sign-up">Sign Up</button>
+          <button onClick={()=>generatePortal("sign up")}  className="Sign-up">Sign Up</button>
         </div>
       </div>
     </div>

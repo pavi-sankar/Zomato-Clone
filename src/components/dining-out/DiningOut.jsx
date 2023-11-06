@@ -8,10 +8,10 @@ function DiningOut({searchQuery}) {
 
   const collectionList = [
     {
-      id: 1, cover: "https://b.zmtcdn.com/data/collections/888af0efb05704bb3fcb19b14977b5b9_1685700703.png?output-format=webp", title: "25 Vibrant Places for Pride Month", places: "24 places"
+      id: 1, cover: "https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_640.jpg", title: "25 Vibrant Places for Pride Month", places: "24 places"
     },
     {
-      id: 2, cover: "https://b.zmtcdn.com/data/collections/77c1b9704985885cbe2cb094e9983eab_1682080540.jpg?output-format=webp", title: "Winners of Zomato Restaurant Awards", places: "12 places"
+      id: 2, cover: "https://cdn.pixabay.com/photo/2022/04/14/04/45/vintage-aesthetic-7131604_640.jpg", title: "Winners of Zomato Restaurant Awards", places: "12 places"
     },
     {
       id: 3, cover: "https://b.zmtcdn.com/data/collections/740c74e2e5d27bbbfdc0d722d9735d07_1674839786.jpg?output-format=webp", title: "16 Best Bars & Pubs", places: "14 places"
@@ -31,6 +31,9 @@ function DiningOut({searchQuery}) {
     {
       id: 8, cover: "https://b.zmtcdn.com/data/collections/5fee3cb5e97bbf2cfae4caced1d25686_1674839495.jpg", title: "8 Great Buffets", places: "9 places"
     },
+    { 
+      id: 9, cover: "https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_640.jpg", title: "Best Outdoor Restaurants" ,places: "6 places"
+    }
   ];
 
   const filterItems = [

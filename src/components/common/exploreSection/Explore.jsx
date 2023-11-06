@@ -1,6 +1,6 @@
 import React from 'react'
 import "./explore.css"
-import { ExploreData } from '../../../../data/ExploreData'
+import { ExploreData } from '../../../data/ExploreData'
 
 function Explore({searchQuery}) {
 
@@ -13,7 +13,7 @@ function Explore({searchQuery}) {
   return (
     <div>
       <div className="max-width explore-section">
-      <h1 className='explore-title'>Delivery restaurants Near Banglore</h1>
+      <h1 className='section-heading'>Delivery restaurants Near Banglore</h1>
         <div className='cards-grid'>
         {filtered.map((item, index) => (
           <div className="explore-card-section" key={index}>

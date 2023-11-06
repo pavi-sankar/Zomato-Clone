@@ -28,6 +28,7 @@
     margin-right: 20px;
     border-radius: 6px;
     position: relative;
+    cursor: pointer;
   }
   
   .gradient-bg {

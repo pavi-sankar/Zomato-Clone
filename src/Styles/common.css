@@ -14,3 +14,9 @@
     color: var(--zomato-gray);
     font-size: 30px;
 }
+
+.section-heading {
+    color: var(--heading-text);
+    font-weight: 600;
+    font-size: xx-large;
+}

@@ -156,7 +156,7 @@ function DeliveryCollections({carousal}) {
   return (
     <div className={carousal ? "delivery-collection-container" : "brands-collection-container"}>
       <div className="max-width">
-        <h1 className="collection-title">{carousal ? "Inspiration for your first order" : "Top brands for you"}</h1>
+        <h1 className="section-heading">{carousal ? "Inspiration for your first order" : "Top brands for you"}</h1>
         <Slider {...settings}>
           {carousal ? FoodList.map((item) => (
             <div key={item.id}>

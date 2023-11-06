@@ -8,16 +8,16 @@ function NightLife({searchQuery}) {
 
   const collectionList = [
     {
-      id: 1, cover: "https://b.zmtcdn.com/data/collections/888af0efb05704bb3fcb19b14977b5b9_1685700703.png?output-format=webp", title: "25 Vibrant Places for Pride Month", places: "24 places"
+      id: 1, cover: "https://b.zmtcdn.com/data/pictures/2/18580202/cae14add668c63e4d0a35ed6dc244ce5_featured_v2.jpg", title: "25 Vibrant Places for Pride Month", places: "24 places"
     },
     {
-      id: 2, cover: "https://b.zmtcdn.com/data/collections/77c1b9704985885cbe2cb094e9983eab_1682080540.jpg?output-format=webp", title: "Winners of Zomato Restaurant Awards", places: "12 places"
+      id: 2, cover: "https://cdn.pixabay.com/photo/2021/08/21/01/53/bars-6561626_640.jpg", title: "China Town", places: "2 places"
     },
     {
-      id: 3, cover: "https://b.zmtcdn.com/data/collections/740c74e2e5d27bbbfdc0d722d9735d07_1674839786.jpg?output-format=webp", title: "16 Best Bars & Pubs", places: "14 places"
+      id: 3, cover: "https://cdn.pixabay.com/photo/2016/02/23/23/32/beer-1218742_640.jpg", title: "14 Best Bars & Pubs", places: "14 places"
     },
     {
-      id: 4, cover: "https://b.zmtcdn.com/data/collections/66bee1c025922a59b8b1ab69a3a6b187_1675082109.jpg?output-format=webp", title: "13 Serene Rooftop Places", places: "12 places"
+      id: 4, cover: "https://cdn.pixabay.com/photo/2022/01/07/19/16/rooftop-cafe-6922425_1280.jpg", title: "Night Rooftop Places", places: "10 places"
     },
     {
       id: 5, cover: "https://b.zmtcdn.com/data/collections/072ec5cf5c95503ab503edcc099f6add_1675252825.jpg?output-format=webp", title: "11 Best Insta-worthy Places", places: "11 places"

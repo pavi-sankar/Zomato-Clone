@@ -1,5 +1,7 @@
+/* AuthPortal.css */
+
 .portal {
-    background: var(--primary-bg);
+    background: var(--bg-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,29 +9,48 @@
     height: 100vh;
     z-index: 10;
     position: fixed;
-}
-
-.form {
+  }
+  
+  .form {
     background: var(--gray);
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-}
-
-input {
-    width: 200px;
-    height: 35px;
-    border-radius: 5px;
-    border-style: none;
-}
-
-.login-submit {
-    border-radius: 5px;
-    height: 30px;
-    width: 100px;
-    color: var(--primary-bg);
-    background-color: var(--tag-green);
-}
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  form h1 {
+    margin: 0 0 20px; 
+    color: var(--tag-red);
+  }
+  
+  input {
+    width: 80%;
+    height: 25px; 
+    border: 2px solid var(--primary-bg);
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 10px 0; 
+    font-size: 16px; 
+  }
+  
+  .login-submit {
+    border-radius: 20px;
+    height: 45px; 
+    width: 120px; 
+    color: white;
+    background-color: var(--tag-blue);
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+  }
+  
+  .login-submit:hover {
+    background-color: var(--tag-blue-hover);
+  }
+  
